@@ -1,4 +1,4 @@
-# <a href="http://rosarior.github.io/awesome-django/"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
+# <a href="http://awesome-django.com"><img src="https://raw.githubusercontent.com/rosarior/awesome-django/gh-pages/images/logo-small.png" align="absmiddle"/> Awesome Django</a>
 
 A curated list of awesome Django apps, projects and resources. Inspired by and based on [awesome-python](https://github.com/vinta/awesome-python/).
 
@@ -9,11 +9,13 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
     - [Authorization](#authorization)
     - [Caching](#caching)
     - [Compatibility](#compatibility)
+    - [Database](#database)
     - [Debugging](#debugging)
     - [Email](#email)
     - [Fields](#fields)
     - [File Transfers](#file-transfers)
     - [Forms](#forms)
+    - [GIS](#gis)
     - [Image handling](#image-handling)
     - [Migrations](#migrations)
     - [Mobile Support](#mobile-support)
@@ -46,8 +48,10 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 - [Resources](#resources)
     - [Books](#books)
     - [Conferences](#conferences)
+    - [External documentation](#external-documentation)
     - [Videos](#videos)
     - [Websites](#websites)
+- [Utilities](#utilities)
 - [Contributing](#contributing)
 
 ## Admin interface
@@ -99,6 +103,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-oauth2-provider](https://github.com/caffeinehit/django-oauth2-provider) - Provide OAuth2 access to your app
 * [django-oml](https://github.com/RouteAtlas/django-oml/) - Object Moderation Layer, mixin for models that allows you moderate several content types.
 * [django-permission](https://github.com/lambdalisue/django-permission/) An enhanced permission library which enables a *logic-based permission system* to handle complex permissions in Django
+* [django-rules](https://github.com/dfunckt/django-rules) - A tiny but powerful app providing object-level permissions to Django, without requiring a database. At its core, it is a generic framework for building rule-based systems, similar to decision trees. It can also be used as a standalone library in other contexts and frameworks.
 
 ## Caching
 
@@ -117,6 +122,14 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 
 * [django-compat](https://github.com/arteria/django-compat) - For- and backwards compatibility layer for Django 1.4 to 1.7.x.
 * [django-compat-lint](https://github.com/ubernostrum/django-compat-lint) - Check Django compatibility of your code.
+
+## Database
+
+*Packages that add support for 3rd party databases or database specific features.*
+
+* [django-postgrespool](https://github.com/kennethreitz/django-postgrespool/) - Postgres Connection Pooling for Django, powered by SQLAlchemy.
+* [dj-database-url](https://github.com/kennethreitz/dj-database-url/) - Use Database URLs in your Django Application.
+* [django-mysql](https://github.com/adamchainz/django-mysql/) - Extensions to Django for use with MySQL/MariaDB.
 
 ## Debugging
 
@@ -154,6 +167,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-location-field](https://github.com/caioariede/django-location-field/) - Location field and widget integrated with google maps.
 * [django-picklefield](https://github.com/gintas/django-picklefield/) - A pickled object field for Django
 * [django-uuidfield](https://github.com/dcramer/django-uuidfield/) - A UUIDField for Django.
+* [django-versatileimagefield](https://github.com/WGBH/django-versatileimagefield/) - A drop-in replacement for django's ImageField that provides a flexible, intuitive and easily-extensible interface for quickly creating new images from the one assigned to the field.
 
 ## File Transfers
 
@@ -170,6 +184,14 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-bootstrap3](https://github.com/dyve/django-bootstrap3/) - Use Bootstrap in your Django templates, the Django way.
 * [django-crispy-forms](https://github.com/maraujop/django-crispy-forms/) - The best way to have DRY Django forms. The app provides a tag and filter that lets you quickly render forms in a div format while providing an enormous amount of capability to configure and control the rendered HTML.
 * [django-floppyforms](https://github.com/gregmuellegger/django-floppyforms/) - django-floppyforms is an application that gives you full control of the output of forms rendering. The forms API and features are exactly the same as Django’s, the key difference is that fields and widgets are rendered in templates instead of using string interpolation, giving you full control of the output using Django templates.
+* [django-autocomplete-light](https://github.com/yourlabs/django-autocomplete-light/) - django-autocomplete-light's purpose is to enable autocompletes quickly and properly in a django project.
+
+## GIS
+
+*Packages that make it easier to work with geographical information system projects.*
+
+* [django-geoposition](https://github.com/philippbosch/django-geoposition/) - A model field that can hold a geoposition (latitude/longitude), and corresponding admin/form widget.
+* [django-location-field](https://github.com/caioariede/django-location-field/) - Location field and widget integrated with Google Maps.
 
 ## Image handling
 
@@ -261,6 +283,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-configurations](https://github.com/jezdez/django-configurations/) - A helper for organizing Django project settings by relying on well established programming patterns.
 * [django-constance](https://github.com/jezdez/django-constance/) - A Django app for storing dynamic settings in pluggable backends (Redis and Django model backend built in) with an integration with the Django admin app.
 * [python-decouple](https://github.com/henriquebastos/python-decouple/) - Strict separation of config from code.
+* [django-environ](https://github.com/joke2k/django-environ) - Allows you to utilize 12factor inspired environment variables to configure your Django application.
 
 ## Storage
 
@@ -268,6 +291,10 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 
 * [django-storages](https://bitbucket.org/david/django-storages/src/) - django-storages is a collection of custom storage backends for Django.
 * [django-queued-storage](https://github.com/jezdez/django-queued-storage/) - Provides a proxy for Django storage backends that allows you to upload files locally and eventually serve them remotely.
+* [django-webdav-storage](https://github.com/marazmiki/django-webdav-storage) - Django storage backend that stores files in custom WebDAV storage.
+* [django-selectel-storage](https://github.com/marazmiki/django-selectel-storage) - This application allows you easily save media and static files into [Selectel](https://selectel.ru/) cloud storage.
+
+
 
 ## Tagging
 
@@ -363,7 +390,10 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [django-adminactions](https://github.com/saxix/django-adminactions/) - Collection of useful actions to use with django.contrib.admin.ModelAdmin and/or django.contrib.admin.AdminSite
 * [django-autoadmin](https://github.com/rosarior/django-autoadmin/) - Automatic admin users for Django projects.
 * [django-braces](https://github.com/brack3t/django-braces/) - Reusable, generic mixins for Django.
+* [django-calendarium](https://github.com/bitmazk/django-calendarium/) - A reusable app to manage and display a calendar in your templates.
 * [django-changuito](https://github.com/angvp/django-changuito/) - A cart app for your django site, an updated fork of django-cart
+* [django-cors-headers](https://github.com/ottoyiu/django-cors-headers) - Django app for handling the server headers required for Cross-Origin Resource Sharing (CORS).
+* [django-dynamic-scraper](https://github.com/holgerd77/django-dynamic-scraper/) - Creating Scrapy scrapers via the Django admin interface.
 * [django-extensions](https://github.com/django-extensions/django-extensions/) - This is a repository for collecting global custom management extensions for the Django Framework.
 * [django-filter](https://github.com/alex/django-filter/) - A generic system for filtering Django QuerySets based on user selections.
 * [django-friendship](https://github.com/revsys/django-friendship/) - Django app to manage following and bi-directional friendships.
@@ -382,6 +412,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 * [metamon](http://tryolabs.github.io/metamon/) - Collection of Ansible playbooks to quickly start your Django Application
 * [micawber](https://github.com/coleifer/micawber/) - A small library for extracting rich content from urls.
 * [towel](https://github.com/matthiask/towel/) - a collection of tools which make your life easier if you are building a web application using Django.
+* [django-hackathon-starter](https://github.com/DrkSephy/django-hackathon-starter) - A boilerplate for Django web applications, containing various social authentication methods and several popular API examples.
 
 # Projects
 
@@ -407,6 +438,7 @@ A curated list of awesome Django apps, projects and resources. Inspired by and b
 ## Other
 
 * [Django packages](https://github.com/pydanny/djangopackages/) - Django Packages is a directory of reusable apps, sites, tools, and more for your Django projects.
+* [django-salted](https://github.com/wunki/django-salted/) - Full stack SaltStack configuration for Django with the help of Vagrant.
 
 ## Project Management
 
@@ -419,14 +451,16 @@ Where to discover new Django apps and projects.
 
 ## Books
 
-* [Django by Example](http://www.lightbird.net/dbe/) (1.2)
-* [Django by Example for Django 1.5](http://lightbird.net/dbe2/) (1.5)
-* [Djen of Django](http://agiliq.com/books/djenofdjango/)
-* [Effective Django](http://effectivedjango.com/) (1.5)
+* [Two Scoops of Django: Best Practices for Django 1.8](http://twoscoopspress.org/products/two-scoops-of-django-1-8/) - A best practice book for making Python and Django as fun as ice cream.
+* [High Performance Django](https://highperformancedjango.com/) (1.7) - Deploying fast, scalable Django sites.
+* [Lightweight Django](http://shop.oreilly.com/product/0636920032502.do) (1.7) - Using REST, WebSockets, and Backbone with Django
+* [Test-Driven Web Development with Python](http://chimera.labs.oreilly.com/books/1234000000754/index.html) (1.7)
+* [Djen of Django](http://agiliq.com/books/djenofdjango/) (< 1.7)
 * [Getting started with Django](http://gettingstartedwithdjango.com/) (video)
 * [Tango With Django](http://www.tangowithdjango.com/) (1.5)
-* [Test-Driven Web Development with Python](http://chimera.labs.oreilly.com/books/1234000000754/index.html) (1.7)
-* [Two Scoops of Django: Best Practices for Django 1.6](http://twoscoopspress.org/products/two-scoops-of-django-1-6/) - Making Python and Django as fun as ice cream.
+* [Effective Django](http://effectivedjango.com/) (1.5)
+* [Django by Example for Django 1.5](http://lightbird.net/dbe2/) (1.5)
+* [Django by Example](http://www.lightbird.net/dbe/) (1.2)
 
 ## Websites
 
@@ -445,9 +479,22 @@ Where to discover new Django apps and projects.
 * [DjangoCon Europe](http://www.djangocon.eu/) - is the annual largest European-based Django conference that is usually held in late spring.
 * [DjangoCon US](http://www.djangocon.us/) - is the largest North American Django conference generally held the first week in September each year.
 
+## External documentation
+
+*Additional sources of information about django features.*
+
+* [Classy Class-Based Views](http://ccbv.co.uk/) - Detailed descriptions, with full methods and attributes, for each of Django's class-based generic views.
+
 ## Videos
 
 * [Must Watch Django Videos](https://github.com/rosarior/django-must-watch/) - Must-watch videos about Django (or about Python as applied to Django)
+* [GoDjango](https://godjango.com) - Django videos from basics to advanced. Covering 3rd party apps to core Django compontents.
+
+# Utilities
+
+*Non Django projects that make it easier to work with Django*
+
+* [Django-manage.py-anywhere](https://github.com/timonweb/Django-manage.py-anywhere/) - Run manage.py commands from anywhere. Finds closest to current path manage.py file and runs commands against it.
 
 # Contributing
 
